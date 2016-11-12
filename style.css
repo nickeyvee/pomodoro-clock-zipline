@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(#7343a4, #a8c39a);
+  font-family: dosis;
+  height: 100%;
+  background-attachment: fixed;
+}
+.title {
+  font-family: grand hotel;
+  text-align: center;
+  margin: auto;
+}
+.chassis {
+  border-radius: 8px;
+  color: #dddddd;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  width: 320px;
+  height: 475px;
+  box-shadow: 10px 5px 100px black;
+  background-color: #383838;
+}
+.timerDisplay {
+  color: linear-gradient(#7343a4, #a8c39a);
+  font-size: 70px;
+  padding: 25px;
+  height: 75px;
+  margin: auto;
+  margin-bottom: 30px;
+  text-align: center;
+}
+button {
+  outline: none;
+  border: none;
+  width: 45px;
+  margin: 20px;
+  padding: 5px;
+  button: none;
+  background: none;
+}
+button.child:hover {
+  color: white;
+}
+button.child:active {
+  color: red;
+}
+.toggle {
+  margin: auto;
+  padding: 21px;
+  width: 320px;
+  font-size: 20px;
+}
+.toggle:hover {
+  background: linear-gradient(#7343a4, #383838);
+  border-radius: 0 0 8px 8px;
+}
+.selector {
+  float: left;
+  margin: auto;
+}
+.selector {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 50%;
+}
+.selector .child {
+  font-size: 25px;
+  font-family: dosis;
+  text-align: center;
+  display: block;
+}
+button {
+  margin-left: 58px;
+}
+footer {
+  font-size: 18px;
+  text-align: center;
+}
+footer a {
+  color: #4c006b;
+}

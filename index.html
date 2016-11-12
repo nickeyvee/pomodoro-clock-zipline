@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro clock Zipline</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Grand+Hotel|Leckerli+One|Ubuntu" rel="stylesheet">
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<body>  
+  <div class="chassis">
+    <h2 class="title">Pomodoro timer</h2>
+    <h1 value="1500000" class="timerDisplay">25 : 00</h1>
+    <div class="selector">       
+      <button value="60000" class="child break">+</button>
+      <p id="break" value="300000" class="child value">5</p>
+      <button value="-60000" class="child break">- </button>
+      <p class="child">break</p>
+    </div>
+    <div class="selector">
+      <button value="60000" class="child session">+</button>
+      <p id="session" class="child value">25</p>
+      <button value="-60000" class="child session">-</button>
+      <p class="child">session</p>
+    </div>
+    <button class="toggle">start</button>
+  </div>
+</body>
+<footer>Designed by <a href="https://www.freecodecamp.com/nickeyvee" target="blank">Nick Vorraso     </a></footer>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
