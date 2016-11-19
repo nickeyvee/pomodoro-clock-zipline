@@ -2,17 +2,21 @@ body
      div.chassis
           h2.title Pomodoro timer
           h1.timerDisplay(value= 1500000) 25 : 00
-          div.selector        
+          p.break.status.animatedText Break!
+          p.session.status.animatedText Session!
+          div.selector  
+            p.child break
             button.child.break(value= +60000) +
             p.child.value(id="break" value = 300000) 5
-            button.child.break(value= -60000) - 
-            p.child break
+            button.child.break(value= -60000) -      
           div.selector
+            p.child session
             button.child.session(value= +60000) +
             p.child.value(id="session") 25
             button.child.session(value= -60000) -
-            p.child session
-          button.toggle start
+            
+          button.start.toggle start
+          button.reset.toggle reset
           
 footer Designed by 
    a(href="https://www.freecodecamp.com/nickeyvee" target= "blank") Nick Vorraso     

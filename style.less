@@ -1,5 +1,10 @@
-body {
-  background: linear-gradient(#7343a4, #a8c39a);
+@green: #a8c39a;
+@purple: #7343a4;
+@darkGrey: #383838;
+@darkPurple: #4c006b;
+
+body{
+  background: linear-gradient(@purple, @green);
   font-family: dosis;
   height: 100%;
   background-attachment: fixed;
@@ -18,10 +23,10 @@ body {
   width: 300px;
   height: 475px;
   box-shadow: 10px 5px 100px black;
-  background-color: #383838;
+  background-color: @darkGrey;
 }
 .timerDisplay {
-  color: linear-gradient(#7343a4, #a8c39a);
+  color: linear-gradient(@purple, @green);
   font-size: 70px;
   padding: 25px;
   height: 75px;
@@ -38,10 +43,10 @@ button {
   button: none;
   background: none;
 }
-button.child:hover {
+button.child:hover{
   color: white;
 }
-button.child:active {
+button.child:active{
   color: red;
 }
 .toggle {
@@ -54,59 +59,64 @@ button.child:active {
   width: 118px;
   font-size: 20px;
 }
-p.child {
-  padding: 3px;
+p.child{
+ padding: 3px;
 }
-.toggle:hover {
+.toggle:hover{
   border: none;
   background: #4c4c4c;
 }
-.toggle:active {
+.toggle:active{
   background: #5f5f5f;
 }
-.selector {
+.selector{
   float: left;
   margin: auto;
 }
-.selector {
+.selector{
   border-top: 1px solid #4c4c4c;
   border-bottom: 1px solid #4c4c4c;
   width: 50%;
 }
-.selector .child {
+.selector .child{
   font-size: 25px;
   font-family: dosis;
   text-align: center;
   display: block;
 }
-button {
+button{
   margin-left: 58px;
 }
 footer {
   font-size: 18px;
   text-align: center;
 }
-footer a {
-  color: #4c006b;
+footer a{
+  color: @darkPurple;
 }
-.value {
+.value{
   margin-left: 10px;
 }
+
 .animatedText {
   text-align: center;
   animation: fadeAndScale 0.5s ease-in;
   transform-origin: center-bottom;
   transition: 5000ms;
 }
-@keyframes fadeAndScale {
-  0% {
-    transform: scale(0.2);
+
+@keyframes fadeAndScale{
+  
+ 0% { 
+    transform: scale(.2); 
     opacity: 1;
   }
-  70% {
-    transform: scale(1);
+  
+  70% { 
+    transform: scale(1); 
   }
-  100% {
+  
+  100% { 
     opacity: 0;
   }
 }

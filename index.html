@@ -18,19 +18,22 @@
   <div class="chassis">
     <h2 class="title">Pomodoro timer</h2>
     <h1 value="1500000" class="timerDisplay">25 : 00</h1>
-    <div class="selector">       
+    <p class="break status animatedText">Break!</p>
+    <p class="session status animatedText">Session!</p>
+    <div class="selector"> 
+      <p class="child">break</p>
       <button value="60000" class="child break">+</button>
       <p id="break" value="300000" class="child value">5</p>
-      <button value="-60000" class="child break">- </button>
-      <p class="child">break</p>
+      <button value="-60000" class="child break">-      </button>
     </div>
     <div class="selector">
+      <p class="child">session</p>
       <button value="60000" class="child session">+</button>
       <p id="session" class="child value">25</p>
       <button value="-60000" class="child session">-</button>
-      <p class="child">session</p>
     </div>
-    <button class="toggle">start</button>
+    <button class="start toggle">start</button>
+    <button class="reset toggle">reset</button>
   </div>
 </body>
 <footer>Designed by <a href="https://www.freecodecamp.com/nickeyvee" target="blank">Nick Vorraso     </a></footer>
