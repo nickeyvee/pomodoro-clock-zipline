@@ -1,9 +1,9 @@
-body   
+
+body
+script(src="clock.js")
      div.chassis
           h2.title Pomodoro timer
           h1.timerDisplay(value= 1500000) 25 : 00
-          p.break.status.animatedText Break!
-          p.session.status.animatedText Session!
           div.selector  
             p.child break
             button.child.break(value= +60000) +
@@ -17,7 +17,7 @@ body
             
           button.start.toggle start
           button.reset.toggle reset
-          
+                 
 footer Designed by 
    a(href="https://www.freecodecamp.com/nickeyvee" target= "blank") Nick Vorraso     
   
